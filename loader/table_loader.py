@@ -17,6 +17,8 @@ TABLE_TO_JSON_SPLITTER_DELIMITER = "<DELIMITER>"
 
 class TableWebLoader(WebBaseLoader):
 
+    # Optionally add here the caption classes used by the documents you are going to index
+    # By default it has pTableCaptionCMT, which is the caption class used by Cisco documents (which were used to test the class)
     known_caption_classes: List = ['pTableCaptionCMT']
 
     @staticmethod
